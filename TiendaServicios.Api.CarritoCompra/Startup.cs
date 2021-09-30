@@ -34,6 +34,8 @@ namespace TiendaServicios.Api.CarritoCompra
         {
             services.AddScoped<ILibroService, LibroService>();
             services.AddControllers();
+
+            // estamos uando pomelo en vez de mysql. porque usamos server MariaDb
             services.AddDbContext<CarritoContexto>(options =>
            {
                options.UseMySql(

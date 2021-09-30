@@ -26,6 +26,8 @@ namespace TiendaServicios.Api.Libro.Test
 
             lista[0].LibreriaMaterialId = Guid.Empty;
 
+            lista[5].LibreriaMaterialId = Guid.Empty;
+
             return lista;
         }
         
@@ -47,6 +49,8 @@ namespace TiendaServicios.Api.Libro.Test
             // 3. instanciar a la clase manejador y pasarle los mocks creados
             Consulta.Manejador manejador = new Consulta.Manejador(mockContexto.Object, mockMapping.Object);
 
+
+            //este codigo de testing quedo a medias, porque no era el propsoito actual del sistema
 
 
         }
